@@ -306,6 +306,11 @@
                                 </div>
                             </div>
                             <!--Footer Widget 1 End-->
+
+
+
+
+
                             <!--Footer Widget 2 Start-->
                             <div class="col-md-4">
                                 <div class="box">
@@ -314,25 +319,27 @@
                                             <h3>Popular tags</h3>
                                         </div>
                                         <div class="widget-detail">
-                                            <div class="tagcloud">
-                                                <a href="#">semper<span>(5)</span></a>
-                                                <a href="#">risus<span>(6)</span></a>
-                                                <a href="#">ullamcorper<span>(7)</span></a>
-                                                <a href="#">condimentum<span>(5)</span></a>
-                                                <a href="#">condimentum<span>(3)</span></a>
-                                                <a href="#">semper<span>(5)</span></a>
-                                                <a href="#">risus<span>(6)</span></a>
-                                                <a href="#">ullamcorper<span>(7)</span></a>
-                                                <a href="#">condimentum<span>(5)</span></a>
-                                                <a href="#">condimentum<span>(3)</span></a>
-                                                <a href="#">semper<span>(5)</span></a>
-                                                <a href="#">risus<span>(6)</span></a>
-                                            </div>
+                                           
+                                            @await Component.InvokeAsync("PopularTag")
+                                            @* 
+
+                                            Component 
+                                            
+                                            *@
+
+
                                         </div>
                                     </aside>
                                 </div>
                             </div>
+
+                          
                             <!--Footer Widget 2 End-->
+
+
+
+
+
                             <!--Footer Widget 3 Start-->
                             <div class="col-md-4">
                                 <div class="box">

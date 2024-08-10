@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MVC_App.DAL;
 using MVC_App.Models;
 
-namespace MVC_App.Areas.Admin.Views
+namespace MVC_App.Controllers
 {
     [Area("Admin")]
     public class PopularTagsController : Controller
@@ -23,25 +18,8 @@ namespace MVC_App.Areas.Admin.Views
         // GET: Admin/PopularTags
         public async Task<IActionResult> Index()
         {
-            return View(await _context.PopularTags.ToListAsync());
-        }
-
-        // GET: Admin/PopularTags/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var popularTag = await _context.PopularTags
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (popularTag == null)
-            {
-                return NotFound();
-            }
-
-            return View(popularTag);
+            var popularTags = await _context.PopularTags.Include(pt => pt.PopularTagPosts).ToListAsync();
+            return View(popularTags);
         }
 
         // GET: Admin/PopularTags/Create
@@ -51,8 +29,6 @@ namespace MVC_App.Areas.Admin.Views
         }
 
         // POST: Admin/PopularTags/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Title,Id")] PopularTag popularTag)
@@ -67,13 +43,8 @@ namespace MVC_App.Areas.Admin.Views
         }
 
         // GET: Admin/PopularTags/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public async Task<IActionResult> Edit(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
             var popularTag = await _context.PopularTags.FindAsync(id);
             if (popularTag == null)
             {
@@ -83,11 +54,9 @@ namespace MVC_App.Areas.Admin.Views
         }
 
         // POST: Admin/PopularTags/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Title,Id")] PopularTag popularTag)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Title")] PopularTag popularTag)
         {
             if (id != popularTag.Id)
             {
@@ -118,14 +87,10 @@ namespace MVC_App.Areas.Admin.Views
         }
 
         // GET: Admin/PopularTags/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public async Task<IActionResult> Delete(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
             var popularTag = await _context.PopularTags
+                .Include(pt => pt.PopularTagPosts)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (popularTag == null)
             {
@@ -144,9 +109,8 @@ namespace MVC_App.Areas.Admin.Views
             if (popularTag != null)
             {
                 _context.PopularTags.Remove(popularTag);
+                await _context.SaveChangesAsync();
             }
-
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
