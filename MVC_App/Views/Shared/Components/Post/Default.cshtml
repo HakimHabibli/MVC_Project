@@ -1,1 +1,25 @@
-﻿
+﻿@model IEnumerable<MVC_App.Models.Post>
+
+<!-- Recent Posts -->
+@foreach (var item in Model)
+{
+    <div class="recent-wrap">
+        <div class="recent-post-thumb">
+            <a href="#">
+                <figure>
+                    <div class="overlay-hover"></div>
+                    <img src="~/images/upload/@item.ImageUrl" alt="recent post" />
+                </figure>
+            </a>
+        </div>
+        <div class="recent-post-detail">
+            <h4>@item.Title</h4>
+            @foreach (var popularTagPost in item.PostPopularTags)
+            {
+                <h5>@popularTagPost.PopularTag.Title</h5>
+            }
+            <a href="#">Read more</a>
+        </div>
+    </div>
+}
+<!-- End -->

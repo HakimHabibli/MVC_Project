@@ -573,78 +573,19 @@
                             <h3>Recent Posts</h3>
                         </div>
                         <div class="widget-detail">
-
-                            <!--Recent Post 1-->
-                            <div class="recent-wrap">
-                                <div class="recent-post-thumb">
-                                    <a href="#">
-                                        <figure>
-                                            <div class="overlay-hover"></div>
-                                            <img src="~/images/upload/recent-post01.jpg" alt="recent post" />
-                                        </figure>
-                                    </a>
-                                </div>
-                                <div class="recent-post-detail">
-                                    <h4>Lorem ipsum dolor dictum consectetur elit amet</h4>
-                                    <a href="#">Read more</a>
-                                </div>
-                            </div>
-                            <!--End-->
-                            <!--Recent Post 2-->
-                            <div class="recent-wrap">
-                                <div class="recent-post-thumb">
-                                    <a href="#">
-                                        <figure>
-                                            <div class="overlay-hover"></div>
-                                            <img src="~/images/upload/recent-post02.jpg" alt="recent post" />
-                                        </figure>
-                                    </a>
-                                </div>
-                                <div class="recent-post-detail">
-                                    <h4>Lorem ipsum dolor dictum consectetur elit amet</h4>
-                                    <a href="#">Read more</a>
-                                </div>
-                            </div>
-                            <!--End-->
-                            <!--Recent Post 3-->
-                            <div class="recent-wrap">
-                                <div class="recent-post-thumb">
-                                    <a href="#">
-                                        <figure>
-                                            <div class="overlay-hover"></div>
-                                            <img src="~/images/upload/recent-post03.jpg" alt="recent post" />
-                                        </figure>
-                                    </a>
-                                </div>
-                                <div class="recent-post-detail">
-                                    <h4>Lorem ipsum dolor dictum consectetur elit amet</h4>
-                                    <a href="#">Read more</a>
-                                </div>
-                            </div>
-                            <!--End-->
-                            <!--Recent Post 4-->
-                            <div class="recent-wrap">
-                                <div class="recent-post-thumb">
-                                    <a href="#">
-                                        <figure>
-                                            <div class="overlay-hover"></div>
-                                            <img src="~/images/upload/recent-post04.jpg" alt="recent post" />
-                                        </figure>
-                                    </a>
-                                </div>
-                                <div class="recent-post-detail">
-                                    <h4>Lorem ipsum dolor dictum consectetur elit amet</h4>
-                                    <a href="#">Read more</a>
-                                </div>
-                            </div>
-                            <!--End-->
-
+                            @await Component.InvokeAsync("Post")
                         </div>
                     </aside>
                     <!--Widget Recent Posts End-->
 
 
 
+
+
+
+
+
+                    <!-- Ready --!>
                     <!--Widget Categories Start-->
                     <aside class="widget widget_categories">
                         <div class="widget-title">

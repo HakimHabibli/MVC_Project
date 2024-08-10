@@ -4,6 +4,7 @@ using MVC_App.DAL;
 
 namespace MVC_App.ViewComponents
 {
+    [ViewComponent(Name = "Post")]
     public class PostsViewComponent : ViewComponent
     {
         private readonly AppDbContext _context;
@@ -18,7 +19,7 @@ namespace MVC_App.ViewComponents
             var posts = await _context.Posts
                 .Include(p => p.Category)
                 .Include(p => p.PostPopularTags)
-                .ToListAsync();
+                  .ToListAsync();
             return View(posts);
         }
     }
