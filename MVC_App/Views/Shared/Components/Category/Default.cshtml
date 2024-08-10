@@ -1,0 +1,18 @@
+﻿@using MVC_App.Models
+@model IEnumerable<Category>
+<ul>
+    @foreach (var item in Model.Where(c=>c.ParentCategoryId==null))
+    { 
+        <li>
+            <a href="#">@item.Title</a>
+            @if(item.SubCategories?.Any()==true)
+            {   <ul>
+                @foreach (var subcategory in item.SubCategories)
+                {      
+                    <li><a href="#">@subcategory.Title</a></li>
+                }
+                </ul>
+            }
+        </li>
+    }
+</ul>
