@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using MVC_App.DAL;
@@ -23,8 +19,13 @@ namespace MVC_App.Areas.Admin.Controllers
         // GET: Admin/Posts
         public async Task<IActionResult> Index()
         {
-            var appDbContext = _context.Posts.Include(p => p.Category);
-            return View(await appDbContext.ToListAsync());
+            var posts = await _context.Posts
+                .Include(p => p.Category)
+                .Include(p => p.PostPopularTags)
+                    .ThenInclude(ptp => ptp.PopularTag)
+                .ToListAsync();
+
+            return View(posts);
         }
 
         // GET: Admin/Posts/Details/5
@@ -37,6 +38,7 @@ namespace MVC_App.Areas.Admin.Controllers
 
             var post = await _context.Posts
                 .Include(p => p.Category)
+                .Include(p => p.PostPopularTags).ThenInclude(ptp => ptp.PopularTag)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (post == null)
             {
@@ -46,29 +48,61 @@ namespace MVC_App.Areas.Admin.Controllers
             return View(post);
         }
 
+
+
+
         // GET: Admin/Posts/Create
         public IActionResult Create()
         {
             ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Title");
+
+            // Fetch PopularTags to display in the form
+            ViewData["PopularTags"] = new MultiSelectList(_context.PopularTags, "Id", "Title");
+
             return View();
         }
 
-        // POST: Admin/Posts/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Title,Content,ImageUrl,PublishDate,CategoryId,Id")] Post post)
+        public async Task<IActionResult> Create([Bind("Title,Content,ImageUrl,PublishDate,CategoryId,Id")] Post post, int[] selectedPopularTags)
         {
-            if (ModelState.IsValid)
+
+            // Add the new post
+            _context.Add(post);
+            await _context.SaveChangesAsync();
+
+            // Add tags to the post
+            if (selectedPopularTags != null)
             {
-                _context.Add(post);
+                foreach (var tagId in selectedPopularTags)
+                {
+                    var popularTagPost = new PopularTagPost
+                    {
+                        PostId = post.Id,
+                        PopularTagId = tagId
+                    };
+                    _context.PopularTagPosts.Add(popularTagPost);
+                }
+
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
             }
-            ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Title", post.CategoryId);
+
+            return RedirectToAction(nameof(Index));
+
+
+            //// Repopulate the ViewData in case of validation errors
+            //ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Title", post.CategoryId);
+            //ViewData["PopularTags"] = new MultiSelectList(_context.PopularTags, "Id", "Title", selectedPopularTags);
+
             return View(post);
         }
+
+
+
+
+
+
+
 
         // GET: Admin/Posts/Edit/5
         public async Task<IActionResult> Edit(int? id)
@@ -78,21 +112,26 @@ namespace MVC_App.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            var post = await _context.Posts.FindAsync(id);
+            var post = await _context.Posts
+                .Include(p => p.PostPopularTags)
+                .ThenInclude(ptp => ptp.PopularTag)
+                .FirstOrDefaultAsync(p => p.Id == id);
+
             if (post == null)
             {
                 return NotFound();
             }
+
             ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Title", post.CategoryId);
+            ViewData["PopularTags"] = new MultiSelectList(_context.PopularTags, "Id", "Title", post.PostPopularTags?.Select(ptp => ptp.PopularTagId));
+
             return View(post);
         }
 
         // POST: Admin/Posts/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Title,Content,ImageUrl,PublishDate,CategoryId,Id")] Post post)
+        public async Task<IActionResult> Edit(int id, [Bind("Title,Content,ImageUrl,PublishDate,CategoryId,Id")] Post post, int[] selectedPopularTags)
         {
             if (id != post.Id)
             {
@@ -104,6 +143,25 @@ namespace MVC_App.Areas.Admin.Controllers
                 try
                 {
                     _context.Update(post);
+
+                    // Remove existing PopularTagPosts
+                    var existingTags = _context.PopularTagPosts.Where(ptp => ptp.PostId == id);
+                    _context.PopularTagPosts.RemoveRange(existingTags);
+
+                    // Add new PopularTagPosts
+                    if (selectedPopularTags != null && selectedPopularTags.Length > 0)
+                    {
+                        foreach (var tagId in selectedPopularTags)
+                        {
+                            var popularTagPost = new PopularTagPost
+                            {
+                                PostId = post.Id,
+                                PopularTagId = tagId
+                            };
+                            _context.PopularTagPosts.Add(popularTagPost);
+                        }
+                    }
+
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -117,11 +175,20 @@ namespace MVC_App.Areas.Admin.Controllers
                         throw;
                     }
                 }
+
                 return RedirectToAction(nameof(Index));
             }
+
             ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Title", post.CategoryId);
+            ViewData["PopularTags"] = new MultiSelectList(_context.PopularTags, "Id", "Title", selectedPopularTags);
+
             return View(post);
         }
+
+
+
+
+
 
         // GET: Admin/Posts/Delete/5
         public async Task<IActionResult> Delete(int? id)
@@ -133,7 +200,10 @@ namespace MVC_App.Areas.Admin.Controllers
 
             var post = await _context.Posts
                 .Include(p => p.Category)
+                .Include(p => p.PostPopularTags)  // Include PostPopularTags to delete them as well
+                .ThenInclude(ptp => ptp.PopularTag)
                 .FirstOrDefaultAsync(m => m.Id == id);
+
             if (post == null)
             {
                 return NotFound();
@@ -142,20 +212,30 @@ namespace MVC_App.Areas.Admin.Controllers
             return View(post);
         }
 
+
         // POST: Admin/Posts/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var post = await _context.Posts.FindAsync(id);
+            var post = await _context.Posts
+                .Include(p => p.PostPopularTags)  // Include PostPopularTags to remove them
+                .FirstOrDefaultAsync(p => p.Id == id);
+
             if (post != null)
             {
+                // Remove related PopularTagPosts
+                _context.PopularTagPosts.RemoveRange(post.PostPopularTags);
+
+                // Remove the post itself
                 _context.Posts.Remove(post);
+
+                await _context.SaveChangesAsync();
             }
 
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+
 
         private bool PostExists(int id)
         {
