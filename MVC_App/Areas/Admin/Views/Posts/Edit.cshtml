@@ -41,6 +41,12 @@
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
+            <div class="form-group">
+                <label asp-for="PostPopularTags" class="control-label"></label>
+                <select asp-for="PostPopularTags" class="form-control" asp-items="ViewBag.PostPopularTags">
+                    <option value=""></option>
+                </select>
+            </div>
         </form>
     </div>
 </div>
@@ -48,4 +54,29 @@
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
+@section css {
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+}
+@section js {
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#CategoryId').select2({
+                placeholder: "Select a category",
+                allowClear: true
+            });
+            $('#PostPopularTags').select2({
+                placeholder: "Select tags",
+                allowClear: true,
+                multiple: true
+
+            });
+            var selectedTags = 
+            @Html.Raw(Json.Serialize(Model.PostPopularTags.Select(t => t.PopularTagId).ToList()));
+            $('#PostPopularTags').val(selectedTags).trigger('change');
+        });
+    </script>
+
+}
 

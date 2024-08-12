@@ -1,54 +1,63 @@
 ﻿@model IEnumerable<MVC_App.Models.Post>
 
 @{
-    ViewData["Title"] = "Index";
+	ViewData["Title"] = "Index";
 }
 
 <h1>Index</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+	<a asp-action="Create">Create New</a>
 </p>
 
 <table class="table">
-    <thead>
-        <tr>
-            <th>Title</th>
-            <th>Content</th>
-            <th>Image URL</th>
-            <th>Publish Date</th>
-            <th>Category</th>
-            <th>Tags</th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>@item.Title</td>
-                <td>@item.Content</td>
-                <td>
-                    @if (!string.IsNullOrEmpty(item.ImageUrl))
-                    {
-                        <img src="~/images/upload/@item.ImageUrl" alt="Post Image" style="width:100px;" />
-                    }
-                </td>
-                <td>@item.PublishDate.ToString("yyyy-MM-dd")</td>
-                <td>@item.Category.Title</td>
-                <td>
-                    @foreach (var tagPost in item.PostPopularTags)
-                    {
-                        <span>@tagPost.PopularTag.Title</span>
-                        <br />
-                    }
-                </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                </td>
-            </tr>
-        }
-    </tbody>
+	<thead>
+		<tr>
+			<th>Title</th>
+			<th>Content</th>
+			<th>Image URL</th>
+			<th>Publish Date</th>
+			<th>Category</th>
+			<th>Tags</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model)
+		{
+			<tr>
+				<td>
+					@Html.DisplayFor(modelItem => item.Title)
+				</td>
+				<td>@item.Content</td>
+				<td>
+					@if (!string.IsNullOrEmpty(item.ImageUrl))
+					{
+						<img src="~/images/upload/@item.ImageUrl" alt="Post Image" style="width:100px;" />
+					}
+				</td>
+				<td>@item.PublishDate.ToString("yyyy-MM-dd")</td>
+				<td>@item.Category.Title</td>
+				<td>
+					@if (item.PostPopularTags == null)
+					{
+						<text> No Tags </text>
+					}
+					else
+					{
+						@foreach (var tagPost in item.PostPopularTags)
+						{
+							<span>@tagPost.PopularTag.Title</span>
+							<br />
+						}
+					}
+				</td>
+				<td>
+					<a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+					<a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+					<a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+				</td>
+			</tr>
+		}
+	</tbody>
 </table>

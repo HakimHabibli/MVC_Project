@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\77upt\\Desktop\\MVC_App\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|c:\\users\\77upt\\desktop\\mvc_app\\mvc_app\\areas\\admin\\controllers\\postscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|solutionrelative:mvc_app\\areas\\admin\\controllers\\postscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|c:\\users\\77upt\\desktop\\mvc_app\\mvc_app\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|solutionrelative:mvc_app\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|c:\\users\\77upt\\desktop\\mvc_app\\mvc_app\\areas\\admin\\views\\posts\\upload.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|solutionrelative:mvc_app\\areas\\admin\\views\\posts\\upload.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|c:\\users\\77upt\\desktop\\mvc_app\\mvc_app\\areas\\admin\\views\\posts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|solutionrelative:mvc_app\\areas\\admin\\views\\posts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|c:\\users\\77upt\\desktop\\mvc_app\\mvc_app\\areas\\admin\\views\\posts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|solutionrelative:mvc_app\\areas\\admin\\views\\posts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|c:\\users\\77upt\\desktop\\mvc_app\\mvc_app\\areas\\admin\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|solutionrelative:mvc_app\\areas\\admin\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|c:\\users\\77upt\\desktop\\mvc_app\\mvc_app\\areas\\admin\\views\\posts\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|solutionrelative:mvc_app\\areas\\admin\\views\\posts\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|c:\\users\\77upt\\desktop\\mvc_app\\mvc_app\\areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,18 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|c:\\users\\77upt\\desktop\\mvc_app\\mvc_app\\areas\\admin\\controllers\\populartagscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|solutionrelative:mvc_app\\areas\\admin\\controllers\\populartagscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|c:\\users\\77upt\\desktop\\mvc_app\\mvc_app\\areas\\admin\\controllers\\postscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|solutionrelative:mvc_app\\areas\\admin\\controllers\\postscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|c:\\users\\77upt\\desktop\\mvc_app\\mvc_app\\areas\\admin\\views\\posts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|solutionrelative:mvc_app\\areas\\admin\\views\\posts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|c:\\users\\77upt\\desktop\\mvc_app\\mvc_app\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|solutionrelative:mvc_app\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,8 +46,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 230,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Upload.cshtml",
+              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Views\\Posts\\Upload.cshtml",
+              "RelativeDocumentMoniker": "MVC_App\\Areas\\Admin\\Views\\Posts\\Upload.cshtml",
+              "ToolTip": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Views\\Posts\\Upload.cshtml",
+              "RelativeToolTip": "MVC_App\\Areas\\Admin\\Views\\Posts\\Upload.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-12T18:11:26.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Views\\Posts\\Index.cshtml",
+              "RelativeDocumentMoniker": "MVC_App\\Areas\\Admin\\Views\\Posts\\Index.cshtml",
+              "ToolTip": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Views\\Posts\\Index.cshtml",
+              "RelativeToolTip": "MVC_App\\Areas\\Admin\\Views\\Posts\\Index.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-12T16:56:11.626Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -54,26 +92,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PopularTagsController.cs",
-              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Controllers\\PopularTagsController.cs",
-              "RelativeDocumentMoniker": "MVC_App\\Areas\\Admin\\Controllers\\PopularTagsController.cs",
-              "ToolTip": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Controllers\\PopularTagsController.cs",
-              "RelativeToolTip": "MVC_App\\Areas\\Admin\\Controllers\\PopularTagsController.cs",
-              "ViewState": "AQIAAF8AAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T16:31:27.824Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "PostsController.cs",
               "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Controllers\\PostsController.cs",
               "RelativeDocumentMoniker": "MVC_App\\Areas\\Admin\\Controllers\\PostsController.cs",
               "ToolTip": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Controllers\\PostsController.cs",
               "RelativeToolTip": "MVC_App\\Areas\\Admin\\Controllers\\PostsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAAAAAA",
+              "ViewState": "AQIAAOYAAAAAAAAAAAAiwCABAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-12T16:14:26.233Z",
               "EditorCaption": ""
@@ -86,7 +111,7 @@
               "RelativeDocumentMoniker": "MVC_App\\Areas\\Admin\\Views\\Posts\\Create.cshtml",
               "ToolTip": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Views\\Posts\\Create.cshtml",
               "RelativeToolTip": "MVC_App\\Areas\\Admin\\Views\\Posts\\Create.cshtml",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAADMAAAASAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAEMAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-12T16:08:08.831Z",
               "EditorCaption": ""
@@ -94,25 +119,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "MVC_App\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "MVC_App\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAGgAAAAAAAAAAAAAAIQAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-12T15:38:22.953Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
               "RelativeDocumentMoniker": "MVC_App\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
               "ToolTip": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
               "RelativeToolTip": "MVC_App\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADwAAAAOAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-12T15:29:24.331Z",
               "EditorCaption": ""
@@ -120,6 +132,44 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "MVC_App\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "MVC_App\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAMEAAAAAAAAAAAAAAOsAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-12T15:38:22.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Views\\Posts\\Edit.cshtml",
+              "RelativeDocumentMoniker": "MVC_App\\Areas\\Admin\\Views\\Posts\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Views\\Posts\\Edit.cshtml",
+              "RelativeToolTip": "MVC_App\\Areas\\Admin\\Views\\Posts\\Edit.cshtml",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAEsAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-12T17:07:00.44Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PopularTagsController.cs",
+              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Controllers\\PopularTagsController.cs",
+              "RelativeDocumentMoniker": "MVC_App\\Areas\\Admin\\Controllers\\PopularTagsController.cs",
+              "ToolTip": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Controllers\\PopularTagsController.cs",
+              "RelativeToolTip": "MVC_App\\Areas\\Admin\\Controllers\\PopularTagsController.cs",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T16:31:27.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "CategoriesController.cs",
               "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Controllers\\CategoriesController.cs",
               "RelativeDocumentMoniker": "MVC_App\\Areas\\Admin\\Controllers\\CategoriesController.cs",
@@ -127,8 +177,7 @@
               "RelativeToolTip": "MVC_App\\Areas\\Admin\\Controllers\\CategoriesController.cs",
               "ViewState": "AQIAAJYAAAAAAAAAAAAAABMAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T15:29:18.065Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-12T15:29:18.065Z"
             }
           ]
         }
