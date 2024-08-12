@@ -56,7 +56,7 @@ namespace MVC_App.Areas.Admin.Controllers
         {
             ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Title");
 
-            // Fetch PopularTags to display in the form
+
             ViewData["PopularTags"] = new MultiSelectList(_context.PopularTags, "Id", "Title");
 
             return View();
@@ -67,11 +67,11 @@ namespace MVC_App.Areas.Admin.Controllers
         public async Task<IActionResult> Create([Bind("Title,Content,ImageUrl,PublishDate,CategoryId,Id")] Post post, int[] selectedPopularTags)
         {
 
-            // Add the new post
+
             _context.Add(post);
             await _context.SaveChangesAsync();
 
-            // Add tags to the post
+
             if (selectedPopularTags != null)
             {
                 foreach (var tagId in selectedPopularTags)
@@ -90,11 +90,6 @@ namespace MVC_App.Areas.Admin.Controllers
             return RedirectToAction(nameof(Index));
 
 
-            //// Repopulate the ViewData in case of validation errors
-            //ViewData["CategoryId"] = new SelectList(_context.Categories, "Id", "Title", post.CategoryId);
-            //ViewData["PopularTags"] = new MultiSelectList(_context.PopularTags, "Id", "Title", selectedPopularTags);
-
-            return View(post);
         }
 
 
@@ -144,11 +139,11 @@ namespace MVC_App.Areas.Admin.Controllers
                 {
                     _context.Update(post);
 
-                    // Remove existing PopularTagPosts
+
                     var existingTags = _context.PopularTagPosts.Where(ptp => ptp.PostId == id);
                     _context.PopularTagPosts.RemoveRange(existingTags);
 
-                    // Add new PopularTagPosts
+
                     if (selectedPopularTags != null && selectedPopularTags.Length > 0)
                     {
                         foreach (var tagId in selectedPopularTags)
@@ -200,7 +195,7 @@ namespace MVC_App.Areas.Admin.Controllers
 
             var post = await _context.Posts
                 .Include(p => p.Category)
-                .Include(p => p.PostPopularTags)  // Include PostPopularTags to delete them as well
+                .Include(p => p.PostPopularTags)
                 .ThenInclude(ptp => ptp.PopularTag)
                 .FirstOrDefaultAsync(m => m.Id == id);
 
@@ -219,15 +214,15 @@ namespace MVC_App.Areas.Admin.Controllers
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var post = await _context.Posts
-                .Include(p => p.PostPopularTags)  // Include PostPopularTags to remove them
+                .Include(p => p.PostPopularTags)
                 .FirstOrDefaultAsync(p => p.Id == id);
 
             if (post != null)
             {
-                // Remove related PopularTagPosts
+
                 _context.PopularTagPosts.RemoveRange(post.PostPopularTags);
 
-                // Remove the post itself
+
                 _context.Posts.Remove(post);
 
                 await _context.SaveChangesAsync();

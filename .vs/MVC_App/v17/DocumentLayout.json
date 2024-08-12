@@ -3,60 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\77upt\\Desktop\\MVC_App\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|c:\\users\\77upt\\desktop\\mvc_app\\mvc_app\\areas\\admin\\controllers\\postscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|solutionrelative:mvc_app\\areas\\admin\\controllers\\postscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|c:\\users\\77upt\\desktop\\mvc_app\\mvc_app\\models\\populartag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|solutionrelative:mvc_app\\models\\populartag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|c:\\users\\77upt\\desktop\\mvc_app\\mvc_app\\dal\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|solutionrelative:mvc_app\\dal\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|c:\\users\\77upt\\desktop\\mvc_app\\mvc_app\\configurations\\populartagpostentitymapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|solutionrelative:mvc_app\\configurations\\populartagpostentitymapping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|c:\\users\\77upt\\desktop\\mvc_app\\mvc_app\\areas\\admin\\views\\categories\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|solutionrelative:mvc_app\\areas\\admin\\views\\categories\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|c:\\users\\77upt\\desktop\\mvc_app\\mvc_app\\areas\\admin\\views\\posts\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|solutionrelative:mvc_app\\areas\\admin\\views\\posts\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|c:\\users\\77upt\\desktop\\mvc_app\\mvc_app\\areas\\admin\\views\\posts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|solutionrelative:mvc_app\\areas\\admin\\views\\posts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|c:\\users\\77upt\\desktop\\mvc_app\\mvc_app\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|solutionrelative:mvc_app\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|c:\\users\\77upt\\desktop\\mvc_app\\mvc_app\\areas\\admin\\views\\populartags\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|solutionrelative:mvc_app\\areas\\admin\\views\\populartags\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|c:\\users\\77upt\\desktop\\mvc_app\\mvc_app\\models\\populartagpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|solutionrelative:mvc_app\\models\\populartagpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|c:\\users\\77upt\\desktop\\mvc_app\\mvc_app\\areas\\admin\\views\\posts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|solutionrelative:mvc_app\\areas\\admin\\views\\posts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|c:\\users\\77upt\\desktop\\mvc_app\\mvc_app\\areas\\admin\\controllers\\populartagscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|solutionrelative:mvc_app\\areas\\admin\\controllers\\populartagscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|c:\\users\\77upt\\desktop\\mvc_app\\mvc_app\\areas\\admin\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|solutionrelative:mvc_app\\areas\\admin\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|c:\\users\\77upt\\desktop\\mvc_app\\mvc_app\\areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|solutionrelative:mvc_app\\areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|c:\\users\\77upt\\desktop\\mvc_app\\mvc_app\\migrations\\20240811092116_createpopulartagposttable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|solutionrelative:mvc_app\\migrations\\20240811092116_createpopulartagposttable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|c:\\users\\77upt\\desktop\\mvc_app\\mvc_app\\areas\\admin\\controllers\\populartagscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|solutionrelative:mvc_app\\areas\\admin\\controllers\\populartagscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|c:\\users\\77upt\\desktop\\mvc_app\\mvc_app\\areas\\admin\\controllers\\postscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|solutionrelative:mvc_app\\areas\\admin\\controllers\\postscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|c:\\users\\77upt\\desktop\\mvc_app\\mvc_app\\areas\\admin\\views\\posts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|solutionrelative:mvc_app\\areas\\admin\\views\\posts\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|c:\\users\\77upt\\desktop\\mvc_app\\mvc_app\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E2CA52FF-0FDF-462A-B57F-BD9C4F81D733}|MVC_App\\MVC_App.csproj|solutionrelative:mvc_app\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -86,172 +54,81 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Views\\Posts\\Create.cshtml",
-              "RelativeDocumentMoniker": "MVC_App\\Areas\\Admin\\Views\\Posts\\Create.cshtml",
-              "ToolTip": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Views\\Posts\\Create.cshtml",
-              "RelativeToolTip": "MVC_App\\Areas\\Admin\\Views\\Posts\\Create.cshtml",
-              "ViewState": "AQIAABoAAAAAAAAAAAAAADQAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-11T09:25:35.829Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "20240811092116_CreatePopularTagPostTable.cs",
-              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Migrations\\20240811092116_CreatePopularTagPostTable.cs",
-              "RelativeDocumentMoniker": "MVC_App\\Migrations\\20240811092116_CreatePopularTagPostTable.cs",
-              "ToolTip": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Migrations\\20240811092116_CreatePopularTagPostTable.cs",
-              "RelativeToolTip": "MVC_App\\Migrations\\20240811092116_CreatePopularTagPostTable.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T09:21:17.156Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PopularTagPostEntityMapping.cs",
-              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Configurations\\PopularTagPostEntityMapping.cs",
-              "RelativeDocumentMoniker": "MVC_App\\Configurations\\PopularTagPostEntityMapping.cs",
-              "ToolTip": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Configurations\\PopularTagPostEntityMapping.cs",
-              "RelativeToolTip": "MVC_App\\Configurations\\PopularTagPostEntityMapping.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T09:19:35.363Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\DAL\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "MVC_App\\DAL\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\DAL\\AppDbContext.cs",
-              "RelativeToolTip": "MVC_App\\DAL\\AppDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T09:18:07.069Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PostsController.cs",
-              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Controllers\\PostsController.cs",
-              "RelativeDocumentMoniker": "MVC_App\\Areas\\Admin\\Controllers\\PostsController.cs",
-              "ToolTip": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Controllers\\PostsController.cs",
-              "RelativeToolTip": "MVC_App\\Areas\\Admin\\Controllers\\PostsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T09:03:16.53Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Views\\Posts\\Delete.cshtml",
-              "RelativeDocumentMoniker": "MVC_App\\Areas\\Admin\\Views\\Posts\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Views\\Posts\\Delete.cshtml",
-              "RelativeToolTip": "MVC_App\\Areas\\Admin\\Views\\Posts\\Delete.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-11T09:27:21.777Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Views\\Categories\\Create.cshtml",
-              "RelativeDocumentMoniker": "MVC_App\\Areas\\Admin\\Views\\Categories\\Create.cshtml",
-              "ToolTip": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Views\\Categories\\Create.cshtml",
-              "RelativeToolTip": "MVC_App\\Areas\\Admin\\Views\\Categories\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-11T09:27:29.558Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PopularTag.cs",
-              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Models\\PopularTag.cs",
-              "RelativeDocumentMoniker": "MVC_App\\Models\\PopularTag.cs",
-              "ToolTip": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Models\\PopularTag.cs",
-              "RelativeToolTip": "MVC_App\\Models\\PopularTag.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAABNAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T09:17:09.736Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Views\\Posts\\Index.cshtml",
-              "RelativeDocumentMoniker": "MVC_App\\Areas\\Admin\\Views\\Posts\\Index.cshtml",
-              "ToolTip": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Views\\Posts\\Index.cshtml",
-              "RelativeToolTip": "MVC_App\\Areas\\Admin\\Views\\Posts\\Index.cshtml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAAACEAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-11T09:11:53.095Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Post.cs",
-              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Models\\Post.cs",
-              "RelativeDocumentMoniker": "MVC_App\\Models\\Post.cs",
-              "ToolTip": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Models\\Post.cs",
-              "RelativeToolTip": "MVC_App\\Models\\Post.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T09:10:34.635Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Views\\PopularTags\\Create.cshtml",
-              "RelativeDocumentMoniker": "MVC_App\\Areas\\Admin\\Views\\PopularTags\\Create.cshtml",
-              "ToolTip": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Views\\PopularTags\\Create.cshtml",
-              "RelativeToolTip": "MVC_App\\Areas\\Admin\\Views\\PopularTags\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-11T09:27:34.758Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PopularTagPost.cs",
-              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Models\\PopularTagPost.cs",
-              "RelativeDocumentMoniker": "MVC_App\\Models\\PopularTagPost.cs",
-              "ToolTip": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Models\\PopularTagPost.cs",
-              "RelativeToolTip": "MVC_App\\Models\\PopularTagPost.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T09:10:40.398Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "PopularTagsController.cs",
               "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Controllers\\PopularTagsController.cs",
               "RelativeDocumentMoniker": "MVC_App\\Areas\\Admin\\Controllers\\PopularTagsController.cs",
               "ToolTip": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Controllers\\PopularTagsController.cs",
               "RelativeToolTip": "MVC_App\\Areas\\Admin\\Controllers\\PopularTagsController.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAIwAAAAAAAAAAA",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T09:07:11.414Z"
+              "WhenOpened": "2024-08-12T16:31:27.824Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 3,
+              "Title": "PostsController.cs",
+              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Controllers\\PostsController.cs",
+              "RelativeDocumentMoniker": "MVC_App\\Areas\\Admin\\Controllers\\PostsController.cs",
+              "ToolTip": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Controllers\\PostsController.cs",
+              "RelativeToolTip": "MVC_App\\Areas\\Admin\\Controllers\\PostsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T16:14:26.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Views\\Posts\\Create.cshtml",
+              "RelativeDocumentMoniker": "MVC_App\\Areas\\Admin\\Views\\Posts\\Create.cshtml",
+              "ToolTip": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Views\\Posts\\Create.cshtml",
+              "RelativeToolTip": "MVC_App\\Areas\\Admin\\Views\\Posts\\Create.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAADMAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-12T16:08:08.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "MVC_App\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "MVC_App\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAAAIQAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-12T15:38:22.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
+              "RelativeDocumentMoniker": "MVC_App\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
+              "ToolTip": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
+              "RelativeToolTip": "MVC_App\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADwAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-12T15:29:24.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "CategoriesController.cs",
               "DocumentMoniker": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Controllers\\CategoriesController.cs",
               "RelativeDocumentMoniker": "MVC_App\\Areas\\Admin\\Controllers\\CategoriesController.cs",
               "ToolTip": "C:\\Users\\77upt\\Desktop\\MVC_App\\MVC_App\\Areas\\Admin\\Controllers\\CategoriesController.cs",
               "RelativeToolTip": "MVC_App\\Areas\\Admin\\Controllers\\CategoriesController.cs",
-              "ViewState": "AQIAAIQAAAAAAAAAAAAAAIoAAAAuAAAA",
+              "ViewState": "AQIAAJYAAAAAAAAAAAAAABMAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-11T09:07:16.176Z"
+              "WhenOpened": "2024-08-12T15:29:18.065Z",
+              "EditorCaption": ""
             }
           ]
         }
